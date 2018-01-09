@@ -19,7 +19,9 @@ TODOs:
 - Should store default variables in classes rather than globally
 - Extends usability to Mac and Linux
 - Easy reversal.
+  -- fails gracefully if the program is closed by Ctrl-C or shutting down, right now websites will continue to be blocked.
+- use a Python cron package rather than the time.sleep hack.
 
 Implementation Details:
-- If you want to add (or remove) sites to be blocked, edit website_list in website_blocker.py
+- If you want to add (or remove) sites to be blocked, edit the website_list in website_blocker.py
 - If you want to change the hours the default hours to block websites, edit the "condition" function in website_blocker.py (the default starting time of the blocker is 10, and ending time is 18)
